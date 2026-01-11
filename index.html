@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+
+    <!-- ✅ GOOGLE FONT (WAJIB ADA) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Global font -->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .fade-in {
+        animation: fadeIn 1s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(50%);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header>
+      <nav
+        class="flex justify-between primary-color mx-10 text-white p-3 mt-3 rounded-full bg-gray-800"
+      >
+        <div class="pl-3 mt-1">
+          <span class="font-bold text-2xl">Cindy</span
+          ><span class="text-white">.</span>
+        </div>
+        <div class="font-medium lg:flex items-center gap-x-14 mx-auto">
+          <a href="#about"><span class="hover:text-blue-600">About</span></a>
+          <a href="#skill"><span class="hover:text-blue-600">Skill</span></a>
+          <a href="#project"
+            ><span class="hover:text-blue-600">Project</span></a
+          >
+        </div>
+        <div class="bg-white font-medium text-black rounded-full px-4 py-2">
+          <a href="#contact"><span>Contact Me</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="about">
+      <div class="text-center mt-48 mb-20 fade-in">
+        <a
+          href="https://github.com/ChindyVanesya"
+          class="bg-blue-700 p-2 rounded-full text-base"
+        >
+          <i class="fa-brands fa-github"></i> github.cindyvanesya</a
+        >
+        <h1 class="text-5xl font-bold mt-5">About Me</h1>
+      </div>
+    </section>
+    <section class="bg-gray-800 px-10">
+      <div class="flex pt-10 pb-10">
+        <div class="w-1/2 fade-in">
+          <span class="font-bold text-2xl">Hai! Saya Cindy Vanesya</span>
+          <h1 class="mt-5 text-3xl font-bold">
+            Web Developer & UI/UX | Laravel, WordPress | Membuat solusi digital
+            yang kreatif dan user-friendly.
+          </h1>
+          <p class="mt-5">
+            Saya lulusan Teknik Informatika Universitas Kristen Satya Wacana
+            dengan minat di bidang pengembangan web dan aplikasi. Saya memiliki
+            pengalaman membangun proyek menggunakan Angular, Laravel, Tailwind
+            CSS, dan WordPress, serta merancang antarmuka yang responsif dan
+            user-friendly. Selain itu, saya terbiasa bekerja dalam tim dan mampu
+            mengelola proyek dari ide hingga implementasi. Saya selalu
+            bersemangat untuk menghadirkan solusi digital yang efisien dan
+            inovatif.
+          </p>
+
+          <div
+            class="flex bg-gray-900 p-1 rounded-full w-[11rem] gap-1 mt-5 fade-in"
+          >
+            <span
+              class="bg-blue-800 p-2 px-4 text-white font-medium rounded-full"
+              >View My CV</span
+            >
+            <a href="assets/Cindy_Tjokra-CV.pdf">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="33"
+                height="33"
+                viewBox="0 0 24 24"
+                class="bg-gray-800 rounded-full mt-1"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8 17.175V6.825q0-.425.3-.713t.7-.287q.125 0 .263.037t.262.113l8.15 5.175q.225.15.338.375t.112.475t-.112.475t-.338.375l-8.15 5.175q-.125.075-.262.113T9 18.175q-.4 0-.7-.288t-.3-.712"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="w-1/2 mt-7">
+          <img
+            src="./assets/foto_cindy_Vanesya_Tjokra-removebg-preview.png"
+            alt="Your Photo"
+            class="w-80 h-80 rounded-full mx-auto object-cover mb-6 border-4 border-white shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- skill -->
+    <section id="skill">
+      <div class="text-center pt-10">
+        <h1 class="text-3xl font-bold mt-5">Skill</h1>
+      </div>
+
+      <div class="fade-in">
+        <div class="flex justify-center gap-28 pt-10">
+          <!-- HTML -->
+          <div class="group flex flex-col items-center cursor-pointer">
+            <i
+              class="fab fa-html5 text-7xl text-orange-500 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:text-orange-600"
+            ></i>
+            <span
+              class="mt-2 text-sm font-medium text-orange-600 opacity-0 translate-y-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0"
+            >
+              HTML
+            </span>
+          </div>
+
+          <!-- CSS -->
+          <div class="group flex flex-col items-center cursor-pointer">
+            <i
+              class="fab fa-css3-alt text-7xl text-blue-500 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:text-blue-600"
+            ></i>
+            <span
+              class="mt-2 text-sm font-medium text-blue-600 opacity-0 translate-y-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0"
+            >
+              CSS
+            </span>
+          </div>
+
+          <!-- WordPress -->
+          <div class="group flex flex-col items-center cursor-pointer">
+            <i
+              class="fa-brands fa-wordpress text-7xl text-blue-500 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:text-blue-600"
+            ></i>
+            <span
+              class="mt-2 text-sm font-medium text-blue-600 opacity-0 translate-y-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0"
+            >
+              WordPress
+            </span>
+          </div>
+
+          <!-- Angular -->
+          <div class="group flex flex-col items-center cursor-pointer">
+            <i
+              class="fab fa-angular text-7xl text-red-500 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:text-red-600"
+            ></i>
+            <span
+              class="mt-2 text-sm font-medium text-red-600 opacity-0 translate-y-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0"
+            >
+              Angular
+            </span>
+          </div>
+
+          <!-- Tailwind -->
+          <div class="group flex flex-col items-center cursor-pointer">
+            <i
+              class="fas fa-wind text-7xl text-teal-400 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:text-teal-500"
+            ></i>
+            <span
+              class="mt-2 text-sm font-medium text-teal-500 opacity-0 translate-y-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0"
+            >
+              Tailwind
+            </span>
+          </div>
+
+          <!-- Figma -->
+          <div class="group flex flex-col items-center cursor-pointer">
+            <i
+              class="fa-brands fa-figma text-7xl text-red-400 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:text-red-500"
+            ></i>
+            <span
+              class="mt-2 text-sm font-medium text-red-500 opacity-0 translate-y-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0"
+            >
+              Figma
+            </span>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-20 mt-20 pb-20">
+          <!-- PHP -->
+          <div class="group flex flex-col items-center cursor-pointer">
+            <i
+              class="fab fa-php text-7xl text-purple-500 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:text-purple-600"
+            ></i>
+            <span
+              class="mt-2 text-sm font-medium text-purple-600 opacity-0 translate-y-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0"
+            >
+              PHP
+            </span>
+          </div>
+
+          <!-- Laravel -->
+          <div class="group flex flex-col items-center cursor-pointer">
+            <i
+              class="fab fa-laravel text-7xl text-red-600 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:text-red-700"
+            ></i>
+            <span
+              class="mt-2 text-sm font-medium text-red-600 opacity-0 translate-y-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0"
+            >
+              Laravel
+            </span>
+          </div>
+
+          <!-- Database (MySQL) -->
+          <div class="group flex flex-col items-center cursor-pointer">
+            <i
+              class="fas fa-database text-7xl text-green-600 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:text-green-700"
+            ></i>
+            <span
+              class="mt-2 text-sm font-medium text-green-600 opacity-0 translate-y-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0"
+            >
+              MySQL
+            </span>
+          </div>
+
+          <!-- Database (PostgreSQL) -->
+          <div class="group flex flex-col items-center cursor-pointer">
+            <i
+              class="fas fa-database text-7xl text-blue-600 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:text-blue-700"
+            ></i>
+            <span
+              class="mt-2 text-sm font-medium text-blue-600 opacity-0 translate-y-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0"
+            >
+              PostgreSQL
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="project" class="py-20 bg-gray-800">
+      <div class="container mx-auto px-6 fade-in">
+        <h3 class="text-3xl font-bold text-center mb-12">My Projects</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-700 p-3 rounded-lg shadow-lg">
+            <img
+              src="./assets/costume.png"
+              alt="Project 1 Screenshot"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h4 class="text-xl font-semibold mb-4">Aplikasi Custome</h4>
+            <p class="mb-4">Menggunakan Figma</p>
+            <a
+              href="https://www.figma.com/proto/Hb9f8qwarQ1GDDiRaFo5K0/TUGAS-IMK-2?page-id=105%3A87&node-id=210-2621&viewport=647%2C748%2C0.22&t=Wdm3e11GxfzHgnQl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=210%3A435"
+              class="text-blue-400 hover:underline"
+              >View Project</a
+            >
+          </div>
+          <div class="bg-gray-700 p-3 rounded-lg shadow-lg">
+            <img
+              src="./assets/bahasaasing.png"
+              alt="Project 2 Screenshot"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h4 class="text-xl font-semibold mb-4">Aplikasi Bahasa Asing</h4>
+            <p class="mb-4">Menggunakan Figma</p>
+            <a
+              href="https://www.figma.com/proto/kkBBTbrVGgiH8z5KVSMb3Q/Project-UI?page-id=0%3A1&node-id=1-5389&p=f&viewport=-564%2C-256%2C0.28&t=3KsTfpBidkDiKgyM-1&scaling=scale-down&content-scaling=responsive"
+              class="text-blue-400 hover:underline"
+              >View Project</a
+            >
+          </div>
+          <div class="bg-gray-700 p-3 rounded-lg shadow-lg">
+            <img
+              src="./assets/webkesehatan.png"
+              alt="Project 3 Screenshot"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h4 class="text-xl font-semibold mb-4">Webiste Kesehatan</h4>
+            <p class="mb-4">Menggunakan Html dan Boostraps</p>
+            <a
+              href="https://chindyvanesya.github.io/Web_Kesehatan"
+              class="text-blue-400 hover:underline"
+              >View Project</a
+            >
+          </div>
+          <div class="bg-gray-700 p-3 rounded-lg shadow-lg">
+            <img
+              src="./assets/Berita.png"
+              alt="Project 3 Screenshot"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h4 class="text-xl font-semibold mb-4">Website Portal Berita</h4>
+            <p class="mb-4">Menggunakan PHP, MySql, dan Tailwindcss</p>
+            <a href="galeri.html" class="text-blue-400 hover:underline"
+              >View Project</a
+            >
+          </div>
+          <div class="bg-gray-700 p-3 rounded-lg shadow-lg">
+            <img
+              src="./assets/laundry.png"
+              alt="Project 3 Screenshot"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h4 class="text-xl font-semibold mb-4">Sistem Laundry</h4>
+            <p class="mb-4">Menggunakan Netbeans</p>
+            <a href="#" class="text-blue-400 hover:underline">View Project</a>
+          </div>
+          <div class="bg-gray-700 p-3 rounded-lg shadow-lg">
+            <img
+              src="./assets/cemsed.png"
+              alt="Project 3 Screenshot"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h4 class="text-xl font-semibold mb-4">Website Cemsed UKSW</h4>
+            <p class="mb-4">Mengelola Website dengan WordPress</p>
+            <a
+              href="https://cemsed.uksw.edu"
+              class="text-blue-400 hover:underline"
+              >View Project</a
+            >
+          </div>
+          <div class="bg-gray-700 p-3 rounded-lg shadow-lg">
+            <img
+              src="assets/ecommerse-home.png"
+              alt="Project 3 Screenshot"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h4 class="text-xl font-semibold mb-4">Website E-Commerse Mini</h4>
+            <p class="mb-4">Menggunakan Laravel</p>
+            <a href="galeri.html" class="text-blue-400 hover:underline"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-6 text-center fade-in">
+        <h3 class="text-3xl font-bold mb-8">Contact Me</h3>
+        <p class="text-lg mb-8">
+          Let's work together! Reach out via email or social media.
+        </p>
+        <div>
+          <p class="text-lg">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="">chindyvanesya67@gmail.com</a>
+          </p>
+          <p class="text-lg">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/ChindyVanesya">github.cindyvanesya</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
