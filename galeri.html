@@ -18,14 +18,61 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="script.js" />
   </head>
   <body class="bg-gray-900 text-white font-poppins">
-    <div>
+    <header>
+      <nav
+        class="flex items-center justify-between bg-gray-800 text-white p-3 mt-3 mx-4 lg:mx-10 rounded-full"
+      >
+        <!-- Logo -->
+        <div class="pl-3">
+          <a href="index.html">
+            <span class="font-bold text-2xl">Cindy</span><span>.</span>
+          </a>
+        </div>
+
+        <!-- Menu Desktop -->
+        <div class="hidden lg:flex items-center gap-x-14 font-medium">
+          <a href="#about" class="hover:text-blue-600">About</a>
+          <a href="#skill" class="hover:text-blue-600">Skill</a>
+          <a href="#project" class="hover:text-blue-600">Project</a>
+        </div>
+
+        <!-- Contact Button Desktop -->
+        <div
+          class="hidden lg:block bg-white text-black font-medium rounded-full px-4 py-2"
+        >
+          <a href="#contact">Contact Me</a>
+        </div>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button id="menu-btn" class="lg:hidden text-white pr-3">☰</button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden flex-col bg-gray-800 text-white mt-3 mx-4 rounded-xl p-5 space-y-4 lg:hidden"
+      >
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skill" class="hover:text-blue-600">Skill</a>
+        <a href="#project" class="hover:text-blue-600">Project</a>
+        <a
+          href="#contact"
+          class="bg-white text-black rounded-full px-4 py-2 text-center font-medium"
+        >
+          Contact Me
+        </a>
+      </div>
+    </header>
+
+    <div class="md:container md:mx-auto px-5">
       <h1 class="text-3xl font-bold mt-20 text-center">Galeri Project</h1>
-      <h1 class="mx-20 font-normal text-gray-400 text-lg">
+      <h1 class="font-normal text-gray-400 text-lg mt-5">
         Website Portal Berita
       </h1>
-      <div class="grid grid-cols-3 mx-20 gap-3">
+      <div class="grid md:grid-cols-3 gap-3">
         <img
           src="assets/berita1.png"
           alt="Project 1"
@@ -44,11 +91,9 @@
       </div>
     </div>
 
-    <div>
-      <h1 class="mx-20 font-normal text-gray-400 text-lg">
-        Website E-Commerse Mini
-      </h1>
-      <div class="grid grid-cols-3 mx-20 gap-3">
+    <div class="md:container md:mx-auto px-5">
+      <h1 class="font-normal text-gray-400 text-lg">Website E-Commerse Mini</h1>
+      <div class="grid md:grid-cols-3 gap-3">
         <img
           src="assets/ecommerse-login.png"
           alt="Project 1"
